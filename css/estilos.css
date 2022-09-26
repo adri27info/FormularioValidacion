@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(186, 141, 201);
+}
+
+div.contenedor {
+  margin: 0px auto;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+div.contenedor div.formulario {
+  width: 100%;
+  height: 400px;
+}
+
+div.formulario form.formulario {
+  border: 3px solid black;
+  padding: 10px 0px;
+  background-color: rgb(111, 18, 111);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form.formulario div.contenedorUsuario,
+form.formulario div.contenedorPassword {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+div.contenedorUsuario input[type="text"],
+div.contenedorPassword input[type="password"] {
+  padding: 15px;
+  flex-grow: 1;
+  border: none;
+  font-size: 17px;
+}
+
+div.contenedorUsuario span.material-symbols-outlined,
+div.contenedorPassword span.material-symbols-outlined {
+  color: black;
+  padding: 13px 15px;
+}
+
+div.contenedorUsuario span.error_usuario,
+div.contenedorPassword span.error_password {
+  background-color: rgb(186, 141, 201);
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 17px;
+  display: none;
+  text-align: justify;
+}
+
+form.formulario button.btnEnviar {
+  width: 90%;
+  background-color: rgb(10, 17, 215);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  div.contenedor {
+    width: 90%;
+  }
+}
