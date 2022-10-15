@@ -66,7 +66,6 @@ div.contenedorPassword span.error_password {
   padding: 15px;
   color: white;
   font-size: 17px;
-  display: none;
   text-align: justify;
 }
 
@@ -80,6 +79,11 @@ form.formulario button.btnEnviar {
   cursor: pointer;
   font-weight: bold;
   font-size: 19px;
+}
+
+span.error_usuario.ocultar,
+span.error_password.ocultar {
+  display: none;
 }
 
 /* Extra small devices (phones, 600px and down) */

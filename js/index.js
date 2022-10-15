@@ -66,11 +66,15 @@ function enviarFormulario(e) {
     }
   }
   if (contador === 2) {
+    console.log("eee" + contador);
     e.target.submit();
-    e.target.reset();
   } else {
-    document.getElementById("error_usuario").style.display = "block";
-    document.getElementById("error_password").style.display = "block";
+    console.log(validaciones);
+    for (let key in validaciones) {
+      if (validaciones[key] === false) {
+        document.getElementById("error_" + key).classList.remove("ocultar");
+      }
+    }
   }
 }
 
